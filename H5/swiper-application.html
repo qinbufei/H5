@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title> 娱乐圈画传</title>
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/application.css">
+    <script src="js/vue.js"></script>
+    <script src="js/jquery-1.11.3/jquery.js"></script>
+    <style>
+
+    </style>
+    <script>   
+      (function (doc, win) {
+              var docEl = doc.documentElement,
+                  resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                  recalc = function () {
+                      var clientWidth = docEl.clientWidth;
+                      if (!clientWidth) return;
+                      if(clientWidth>=640){
+                          docEl.style.fontSize = '100px';
+                      }else{
+                          docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+                      }
+                  };
+
+              if (!doc.addEventListener) return;
+              win.addEventListener(resizeEvt, recalc, false);
+              doc.addEventListener('DOMContentLoaded', recalc, false);
+          })(document, window);
+</script> 
+</head>
+<body>
+    <div class="swiper-container" id="swiper-container1">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide page1" id="">
+            <img src="img/page1-text1.png" alt="">
+            <img src="img/page1-text2.png" alt="">
+            <img src="img/page1-text3.png" alt="">
+            <img src="img/page1-text4.png" alt="">
+          </div>
+
+          <div class="swiper-slide page2" id="">
+            <img src="img/page2-text1.png" alt="">
+            <img src="img/page2-text2.png" alt="">
+            <img src="img/page2-text3.png" alt="">
+            <img src="img/page2-text4.png" alt="">
+          </div>
+      </div> 
+    </div>
+
+    <div class="arrow"></div>
+
+    <div class="music move" id='musicMenu'>
+      <audio src="audio/Active_Morning.mp3"  preload="none" loop id='musicAudio' >
+        
+      </audio>
+    </div>
+
+    <script src="js/swiper-3.4.2.min.js"></script>
+    <script src="js/application.js"></script>
+    <script>        
+
+    </script>
+</body>
+</html>

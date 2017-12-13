@@ -1,0 +1,45 @@
+/*
+* @Author: Li Jing
+* @Date:   2017-10-18 16:24:21
+* @Last Modified by:   Li Jing
+* @Last Modified time: 2017-10-21 19:55:01
+*/
+*,::before,::after{
+	font-size: 0.14rem;
+	margin:0;
+	padding:0;
+	-webkit-tap-highlight-color:transparent;
+	-webkit-box-sizing:border-box;
+	box-sizing: border-box;
+	font-family: '微软雅黑',sans-serif;
+	font-style: normal;
+}
+input,button{
+	border:none;
+	-webkit-appearance:none;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+ol,ul{
+	list-style: none;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.clearfix::before,
+.clearfix::after{
+	content:'';
+	display: block;
+	visibility:hidden;
+	clear:both;
+	line-height: 0;
+	height: 0;
+}
+body{
+	margin:0 auto;
+}

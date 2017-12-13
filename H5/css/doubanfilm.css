@@ -1,0 +1,211 @@
+header{
+	position: fixed;
+	top:0px;
+	left:0px;
+	right: 0px;
+	background-color: #fff;
+}
+header>div{
+	display: flex;
+	padding: 0 0.18rem;
+	border-bottom: 0.02rem solid #f3f3f3;
+	justify-content: space-between;
+	align-items:center;
+	height: 0.47rem;
+	min-width: 130px;
+}
+header h1{
+	width:0.46rem;
+	height: 0.22rem;
+	background-image: url(../image/douban.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+header>div>nav{
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+}
+header>div>nav>ul{
+	display: flex;
+	justify-content:space-between;
+	align-items:center;
+	flex-flow:row nowrap;
+	margin-right: 0.3rem;
+}
+header>div>nav>ul>li{
+	margin-right: 0.19rem;
+	font-size: 0.14rem;
+}
+header>div>nav span{
+	background-image: url(../image/data-image-png;base….png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 0.2457143rem;
+	height: 0.1828571rem;
+	display: inline-block;
+}
+main{
+	width: 6.50rem;
+	margin:47px auto 0;
+}
+main>section{
+	max-width: 650px;
+}
+main>section>.top{
+	padding:0 0.18rem;
+	width: 6.5rem;
+
+}
+main>section>.top>h2{
+	float: left;
+}
+main>section>.top>a{
+	float: right;
+}
+main>section>.content{
+
+}
+main>section>.content>ul{
+	padding:15px 0 43px 0;
+	white-space: nowrap;
+	width: 100%;
+	max-width: 650px;
+	margin:0 auto;
+	overflow-x: auto;
+	height: 266px;	
+}
+main>section>.content>ul::-webkit-scrollbar{width:0px}
+main>section>.content>ul>li{
+	width:100px;
+	margin-left: 0.24rem;
+	display: inline-block;
+	height: 192px;
+}
+main>section>.content .picture{
+	width:100px;
+	height: 143px;
+	background-image: url(../image/p2499792043.jpg);
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+main>section>.content>ul .picture:nth-of-type(2){
+	background-image: url(../image/p2499793218.jpg);
+}
+main>section>.content>ul>li p{
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	text-align: center;
+}
+main>section>.content>ul>li span{
+	display: inline-block;
+	height: 15px;
+	width: 76px;
+	background-image: url(../image/ic_rating_m.png
+		);
+	background-repeat: no-repeat;
+	background-position: 0 -30px;
+}
+main>section:nth-of-type(4)>.content a{
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	padding:0 0.15rem;
+	letter-spacing: 0.1rem;
+	text-align: center;
+}
+main>section:nth-of-type(4)>.content>ul>li{
+	margin: 0 0 8px 8px;
+    font-size: .14rem;
+    display: inline-block;
+    border-radius: .25rem;
+    border: solid 1px;
+    vertical-align: middle;
+    width:auto;
+    height: auto;
+}
+main>section:nth-of-type(4)>.content>ul>li.line{
+	width: 100%;
+    display: block;
+    height: 1px;
+    border: 0;
+    margin: 0;
+}
+main>section:nth-of-type(4)>.content>ul{
+	height: auto;
+}
+main>section:nth-of-type(5)>.content>ul{
+	height: auto;
+	padding: 0.18rem 0 0.3rem;
+	font-size: 0.14rem;
+
+}
+main>section:nth-of-type(5)>.content>ul>li{
+    font-size: .14rem;
+    float: left;
+    margin-left: 0;
+    border-top: 1px solid #eee;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    width:50%;
+    height: 0.42rem;
+    line-height: 0.42rem;
+    padding-right:0.18rem; 
+    padding-left:0.18rem; 
+}
+main>section:nth-of-type(5)>.content>ul>li>a{
+	color:#42bd56;
+}
+main>section:nth-of-type(5)>.content>ul>li>i{
+	float: right;
+	display: inline-block;
+	width: 0.08rem;
+	height: 0.08rem;
+	border-right:2px solid #eee;
+	border-bottom:2px solid #eee;
+	margin-top: 0.16rem;
+	transform:rotate(-45deg);
+
+}
+footer{
+	width:6.5rem;
+	margin:0 auto;
+	text-align: center;
+	padding: 0 0 20px 0;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 15px;
+}
+footer>.info{
+	margin: 0 auto 15px;
+    overflow: hidden;
+    text-align: left;
+    font-size: 14px;
+    color: #111;
+    display: inline-block;
+}
+footer>.info>img{
+	width: 48px;
+	height: 48px;
+	display: inline-block;
+	margin-right: 12px;
+}
+footer>.info>.info-contain{
+	display: inline-block;
+	vertical-align: top;
+}
+footer>.info>.info-contain>strong{
+	line-height: 28px;
+	font-size: 0.24rem;
+	font-weight: normal;
+}
+footer>.info>.info-contain>p{
+	line-height: 20px;
+}
+footer>a{
+	display: block;
+	color: #42bd56;
+}
