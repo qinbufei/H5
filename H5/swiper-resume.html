@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title> 个人简历</title>
+    <link rel="stylesheet" href="css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" type="text/css" href="css/base.css">
+    <link rel="stylesheet" type="text/css" href="css/resume.css">
+    <script src="js/vue.js"></script>
+    <script src="js/jquery-1.11.3/jquery.js"></script>
+    <style>
+
+    </style>
+    <script>   
+      (function (doc, win) {
+              var docEl = doc.documentElement,
+                  resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                  recalc = function () {
+                      var clientWidth = docEl.clientWidth;
+                      if (!clientWidth) return;
+                      if(clientWidth>=640){
+                          docEl.style.fontSize = '100px';
+                      }else{
+                          docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+                      }
+                  };
+
+              if (!doc.addEventListener) return;
+              win.addEventListener(resizeEvt, recalc, false);
+              doc.addEventListener('DOMContentLoaded', recalc, false);
+          })(document, window);
+</script> 
+</head>
+<body>
+    <div class="swiper-container" id="swiper-container1">
+      <div class="swiper-wrapper">
+
+          <div class="swiper-slide page1" id="">
+            <img src="img/20161129.jpg" alt="">
+            <h1>Hello!</h1>
+            <h2>我叫李京</h2>
+            <h3>我正在寻找一份前端工程师的工作</h3>
+          </div>
+
+          <div class="swiper-slide page2" id="">
+            <p>基础信息</p>
+            <p>性别：男</p>
+            <p>年龄：27岁</p>
+            <p>最高学历：硕士</p>
+            <p>专业：控制工程</p>
+            <p>手机号码：18310898076</p>
+            <p>邮箱：qinbufei@foxmail.com</p>
+          </div>
+
+          <div class="swiper-slide page3" id="">
+            <p>专业技能</p>
+            <p>html css</p>  
+              <div class="count">
+                  <i>90%</i>
+                  <div class="two">
+                        <div class="ratio"></div>
+                        <div class="section-1"></div>
+                        <div class="section-2"></div>
+                  </div>
+              </div>
+            <p>javascript</p>
+            <p>nodejs</p>
+            <p>boostrap</p>
+            <p>Vue</p>
+            <p>React</p>
+          </div>
+      </div> 
+    </div>
+
+    <div class="arrow"></div>
+
+    <div class="music move" id='musicMenu'>
+      <audio src="audio/Active_Morning.mp3"  preload="none" loop id='musicAudio' >
+        
+      </audio>
+    </div>
+
+    <script src="js/swiper-3.4.2.min.js"></script>
+    <script src="js/resume.js"></script>
+    <script>        
+
+    </script>
+</body>
+</html>
